@@ -1,0 +1,316 @@
+import "./globals.css";
+
+export const metadata = {
+  title: "ProveNcheck - #1 Vehicle History Reports | ProveNcheck Car Reports",
+  description: "ProveNcheck offers the most comprehensive vehicle history reports. Get instant VIN checks, accident history, mileage verification, title records, and market value analysis. Trusted by thousands of car buyers worldwide. Avoid costly mistakes with our detailed car history reports.",
+  keywords: "provencheck, proven check, vehicle history report, VIN check, car history, auto history report, used car report, vehicle records, accident history, mileage verification, title check, car buying, automotive history, vehicle inspection",
+  authors: [{ name: "ProveNcheck Team" }],
+  creator: "ProveNcheck",
+  publisher: "ProveNcheck",
+  // Enhanced meta tags for better SERP control
+  metadataBase: new URL("https://provencheck.site"),
+  alternates: {
+    canonical: "https://provencheck.site",
+    languages: {
+      "en-US": "https://provencheck.site",
+      "x-default": "https://provencheck.site"
+    }
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  // Enhanced Open Graph for social media SERP
+  openGraph: {
+    title: "ProveNcheck - #1 Vehicle History Reports | Complete Car History Check",
+    description: "Get comprehensive vehicle history reports from ProveNcheck. Check accident history, verify mileage, review title records, and get market value analysis. Trusted by car buyers worldwide.",
+    url: "https://provencheck.site",
+    siteName: "ProveNcheck",
+    type: "website",
+    locale: "en_US",
+    images: [
+      {
+        url: "/HistoriVIN.png",
+        width: 1200,
+        height: 630,
+        alt: "ProveNcheck - Vehicle History Reports",
+        type: "image/png"
+      },
+    ],
+  },
+  // Enhanced Twitter Card
+  twitter: {
+    card: "summary_large_image",
+    title: "ProveNcheck - #1 Vehicle History Reports",
+    description: "Get comprehensive vehicle history reports. Check accident history, verify mileage, and get market value analysis. Trusted by car buyers worldwide.",
+    images: ["/HistoriVIN.png"],
+    creator: "@provencheck",
+    site: "@provencheck",
+  },
+  // Search Engine Verification
+  verification: {
+    google: "your-google-verification-code",
+    yandex: "your-yandex-verification-code",
+    yahoo: "your-yahoo-verification-code",
+    other: {
+      "msvalidate.01": "your-bing-verification-code"
+    }
+  },
+  category: "Automotive",
+  classification: "Vehicle History Reports",
+  // Additional meta properties
+  referrer: "origin-when-cross-origin",
+  formatDetection: {
+    telephone: false,
+  },
+  // Enhanced favicon configuration
+  icons: {
+    icon: [
+      { url: "/car-logo.webp", type: "image/webp" }
+    ],
+    shortcut: "/car-logo.webp",
+    apple: [
+      { url: "/car-logo.webp", sizes: "180x180", type: "image/webp" },
+      { url: "/car-logo.webp", sizes: "152x152", type: "image/webp" }
+    ],
+    other: [
+      { rel: "icon", url: "/car-logo.webp", sizes: "16x16", type: "image/webp" },
+      { rel: "mask-icon", url: "/car-logo.webp", color: "#2563eb" }
+    ]
+  },
+  // App-specific meta
+  other: {
+    "apple-mobile-web-app-title": "ProveNcheck",
+    "application-name": "ProveNcheck",
+    "msapplication-TileColor": "#2563eb",
+    "msapplication-TileImage": "/car-logo.webp",
+    "theme-color": "#2563eb",
+    // Enhanced SERP meta tags
+    "price": "USD 40",
+    "availability": "InStock",
+    "category": "Automotive Services",
+    "rating": "4.8",
+    "review_count": "2847"
+  },
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        
+        {/* Enhanced Favicon Configuration */}
+
+        <link rel="icon" href="/favicon.ico" />
+
+        
+        {/* Microsoft Tile Configuration */}
+        <meta name="msapplication-TileImage" content="/car-logo.webp" />
+        <meta name="msapplication-square70x70logo" content="/car-logo.webp" />
+        <meta name="msapplication-square150x150logo" content="/car-logo.webp" />
+        <meta name="msapplication-wide310x150logo" content="/car-logo.webp" />
+        <meta name="msapplication-square310x310logo" content="/car-logo.webp" />
+        
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="format-detection" content="telephone=no" />
+        
+        {/* Structured Data for SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "ProveNcheck",
+              "alternateName": "ProveNcheck",
+              "url": "https://provencheck.site",
+              "logo": "https://provencheck.site/car-logo.webp",
+              "description": "Leading provider of comprehensive vehicle history reports and VIN checks for car buyers worldwide.",
+              "sameAs": [
+                "https://twitter.com/provencheck",
+                "https://facebook.com/provencheck",
+                "https://linkedin.com/company/provencheck"
+              ],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "customer service",
+                "availableLanguage": "English"
+              },
+              "offers": {
+                "@type": "Offer",
+                "name": "Vehicle History Report",
+                "description": "Comprehensive vehicle history report including accident history, mileage verification, title records, and market value analysis",
+                "price": "20",
+                "priceCurrency": "USD"
+              },
+              "service": {
+                "@type": "Service",
+                "name": "Vehicle History Reports",
+                "description": "Professional vehicle history checking service",
+                "provider": {
+                  "@type": "Organization",
+                  "name": "ProveNcheck"
+                },
+                "areaServed": "Worldwide",
+                "hasOfferCatalog": {
+                  "@type": "OfferCatalog",
+                  "name": "Vehicle History Services",
+                  "itemListElement": [
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@type": "Service",
+                        "name": "VIN Check Report",
+                        "description": "Complete vehicle history analysis"
+                      }
+                    }
+                  ]
+                }
+              }
+            })
+          }}
+        />
+        
+        {/* Additional Structured Data for Local Business (if applicable) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "ProveNcheck",
+              "url": "https://provencheck.site",
+              "description": "Get comprehensive vehicle history reports and VIN checks. Uncover accident history, verify mileage, check title records, and get market value analysis.",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://provencheck.site/?vin={search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
+            })
+          }}
+        />
+        
+        {/* FAQ Schema for SERP Enhancement */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "How accurate are ProveNcheck reports?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Our reports are highly accurate as we source data from over 900 trusted databases including DMV records, insurance companies, auction houses, and government agencies. However, we recommend using our reports as one factor in your decision-making process."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How long does it take to receive my ProveNcheck report?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Most reports are delivered within 1-2 hours via email. However, we allow up to 6-12 hours for delivery to account for any technical delays or complex data compilation requirements."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What makes ProveNcheck different from competitors?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "ProveNcheck offers the most comprehensive database with over 1 billion data points, faster delivery times, 24/7 customer support, and competitive pricing. We also provide market value analysis and detailed damage assessments."
+                  }
+                },
+                {
+                  "@type": "Question", 
+                  "name": "Do ProveNcheck reports cover vehicles from all countries?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We currently cover vehicles from over 35 countries across North America, Europe, Oceania, Africa, and the Middle East. Our coverage is continuously expanding to include more international markets."
+                  }
+                }
+              ]
+            })
+          }}
+        />
+        
+        {/* Product/Service Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "Vehicle History Report",
+              "description": "Comprehensive vehicle history report including accident history, mileage verification, title records, and market value analysis",
+              "brand": {
+                "@type": "Brand",
+                "name": "ProveNcheck"
+              },
+              "offers": {
+                "@type": "Offer",
+                "price": "40",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "seller": {
+                  "@type": "Organization",
+                  "name": "ProveNcheck"
+                }
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "reviewCount": "2847",
+                "bestRating": "5",
+                "worstRating": "1"
+              },
+              "review": [
+                {
+                  "@type": "Review",
+                  "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                  },
+                  "author": {
+                    "@type": "Person",
+                    "name": "JC"
+                  },
+                  "reviewBody": "Very reassuring before buying a used vehicle. ProveNcheck provided a detailed and accurate report."
+                },
+                {
+                  "@type": "Review",
+                  "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                  },
+                  "author": {
+                    "@type": "Person",
+                    "name": "Sasha"
+                  },
+                  "reviewBody": "Slightly pricey, but saved me from a huge mistake. The mileage was tampered, and ProveNcheck caught it."
+                }
+              ]
+            })
+          }}
+        />
+      </head>
+      <body className="antialiased">
+        {children}
+      </body>
+    </html>
+  );
+}
