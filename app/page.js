@@ -459,49 +459,61 @@ if(formattedDate == "15/11/2025"){
                     <label className="block text-gray-900 font-semibold mb-3 text-lg">
                       <strong>Select Your Vehicle Type:</strong>
                     </label>
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                      <button
-                        type="button"
-                        onClick={() => setCarType('hatchback')}
-                        className={`p-4 border-2 rounded-full transition-all ${
-                          carType === 'hatchback'
-                            ? 'border-blue-600 bg-blue-50 shadow-lg'
-                            : 'border-gray-300 hover:border-blue-300'
-                        }`}
-                      >
-                        <div className="text-3xl mb-2 font-bold text-blue-600">$20</div>
-                        <div className="font-bold text-lg text-gray-900">HATCHBACK</div>
-                        <div className="text-xs text-gray-600 mt-1">Compact & Efficient</div>
-                      </button>
-                      
-                      <button
-                        type="button"
-                        onClick={() => setCarType('sedan')}
-                        className={`p-4 border-2 rounded-full transition-all ${
-                          carType === 'sedan'
-                            ? 'border-blue-600 bg-blue-50 shadow-lg'
-                            : 'border-gray-300 hover:border-blue-300'
-                        }`}
-                      >
-                        <div className="text-3xl mb-2 font-bold text-blue-600">$35</div>
-                        <div className="font-bold text-lg text-gray-900">SEDAN</div>
-                        <div className="text-xs text-gray-600 mt-1">Classic & Comfortable</div>
-                      </button>
-                      
-                      <button
-                        type="button"
-                        onClick={() => setCarType('4x4')}
-                        className={`p-4 border-2 rounded-full transition-all ${
-                          carType === '4x4'
-                            ? 'border-blue-600 bg-blue-50 shadow-lg'
-                            : 'border-gray-300 hover:border-blue-300'
-                        }`}
-                      >
-                        <div className="text-3xl mb-2 font-bold text-blue-600">$50</div>
-                        <div className="font-bold text-lg text-gray-900">4X4 / SUV</div>
-                        <div className="text-xs text-gray-600 mt-1">Rugged & Powerful</div>
-                      </button>
-                    </div>
+               <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3">
+  {/* Hatchback */}
+  <button
+    type="button"
+    onClick={() => setCarType('hatchback')}
+    className={`flex items-center gap-2 px-4 py-2 rounded-full border text-sm font-semibold transition-all
+      ${
+        carType === 'hatchback'
+          ? 'border-blue-600 text-blue-600 shadow-md'
+          : 'border-gray-300 bg-white text-gray-700 hover:border-blue-600'
+      }`}
+  >
+    <span className={`px-2 py-0.5 rounded-full text-xs font-bold bg-blue-100 text-blue-600`}>
+      From $20
+    </span>
+    Hatchback
+  </button>
+
+  {/* Sedan */}
+  <button
+    type="button"
+    onClick={() => setCarType('sedan')}
+    className={`flex items-center gap-2 px-4 py-2 rounded-full border text-sm font-semibold transition-all
+      ${
+        carType === 'sedan'
+          ? 'border-blue-600 text-blue-600 shadow-md'
+          : 'border-gray-300 bg-white text-gray-700 hover:border-blue-600'
+      }`}
+  >
+    <span className={`px-2 py-0.5 rounded-full text-xs font-bold bg-blue-100 text-blue-600`}>
+      From $35
+    </span>
+    Sedan
+  </button>
+
+  {/* 4x4 */}
+  <button
+    type="button"
+    onClick={() => setCarType('4x4')}
+    className={`flex items-center gap-2 px-4 py-2 rounded-full border text-sm font-semibold transition-all
+      ${
+        carType === '4x4'
+          ? 'border-blue-600 text-blue-600 shadow-md'
+          : 'border-gray-300 bg-white text-gray-700 hover:border-blue-600'
+      }`}
+  >
+    <span className={`px-2 py-0.5 rounded-full text-xs font-bold bg-blue-100 text-blue-600`}>
+      From $60
+    </span>
+    4x4
+  </button>
+</div>
+
+
+
                     <div className="mt-2 text-sm text-gray-500">
                       <strong>Selected:</strong> {carType === 'hatchback' ? 'Hatchback' : carType === 'sedan' ? 'Sedan' : '4x4/SUV'} variant
                     </div>

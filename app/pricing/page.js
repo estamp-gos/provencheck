@@ -514,7 +514,7 @@ export default function Pricing() {
               },
               {
                 question: "Do you offer discounts for multiple reports?",
-                answer: "Currently, each report is priced individually From 35$. We may offer promotional pricing from time to time, but each VIN requires a separate report purchase."
+                answer: "Currently, each report is priced individually From $20. We may offer promotional pricing from time to time, but each VIN requires a separate report purchase."
               },
               {
                 question: "What if the VIN I entered is incorrect?",
