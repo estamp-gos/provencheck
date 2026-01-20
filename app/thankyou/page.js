@@ -12,14 +12,15 @@ export default function ThankYou() {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <Link href="/" className="flex items-center">
-              <Image 
-                src="/car-logo.webp" 
-                alt="HistorivinStore" 
-                width={40}
-                height={40}
-                className="mr-3"
-              />
-              <div className="text-2xl font-bold text-blue-600">HistorivinStore</div>
+             <Image
+              src="/proven-check.svg"
+              alt="Proven Check"
+              width={100}
+              height={100}
+              className="mr-3"
+            />
+
+              <div className="text-2xl font-bold text-blue-600">Proven Check</div>
             </Link>
             
             {/* Navigation */}
@@ -169,10 +170,10 @@ export default function ThankYou() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0 flex items-center">
               <Image 
-                src="/car-logo.webp" 
+                src="/proven-check.png" 
                 alt="HistorivinStore" 
-                width={32}
-                height={32}
+                width={40}
+                height={40}
                 className="mr-3"
               />
               <div className="text-2xl font-bold text-blue-400">HistorivinStore</div>

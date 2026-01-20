@@ -20,10 +20,10 @@ export default function About() {
             <div className="flex items-center">
               <Link href="/" className="flex items-center">
                 <Image
-                  src="/car-logo.webp"
+                  src="/proven-check.png"
                   alt="ProveNcheck"
-                  width={40}
-                  height={40}
+                  width={48}
+                  height={48}
                   className="mr-3"
                 />
                 <div className="text-2xl font-bold text-blue-600">ProveNcheck</div>
@@ -207,7 +207,7 @@ export default function About() {
               </div>
               <div>
                 <h4 className="font-semibold text-white mb-2">Pricing</h4>
-                <p className="text-blue-100">From $35 per comprehensive vehicle history report</p>
+                <p className="text-blue-100">From $20 per comprehensive vehicle history report</p>
               </div>
               <div>
                 <h4 className="font-semibold text-white mb-2">Delivery Method</h4>
@@ -283,10 +283,10 @@ export default function About() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0 flex items-center">
               <Image
-                src="/car-logo.webp"
+                src="/proven-check.png"
                 alt="ProveNcheck"
-                width={32}
-                height={32}
+                width={40}
+                height={40}
                 className="mr-3"
               />
               <div className="text-xl font-bold text-blue-400">ProveNcheck</div>

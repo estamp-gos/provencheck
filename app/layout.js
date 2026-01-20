@@ -39,7 +39,7 @@ export const metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/HistoriVIN.png",
+        url: "/proven-check.png",
         width: 1200,
         height: 630,
         alt: "ProveNcheck - Vehicle History Reports",
@@ -52,7 +52,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "ProveNcheck - #1 Vehicle History Reports",
     description: "Get comprehensive vehicle history reports. Check accident history, verify mileage, and get market value analysis. Trusted by car buyers worldwide.",
-    images: ["/HistoriVIN.png"],
+    images: ["/proven-check.png"],
     creator: "@provencheck",
     site: "@provencheck",
   },
@@ -75,16 +75,16 @@ export const metadata = {
   // Enhanced favicon configuration
   icons: {
     icon: [
-      { url: "/car-logo.webp", type: "image/webp" }
+      { url: "/proven-check.png", type: "image/webp" }
     ],
-    shortcut: "/car-logo.webp",
+    shortcut: "/proven-check.png",
     apple: [
-      { url: "/car-logo.webp", sizes: "180x180", type: "image/webp" },
-      { url: "/car-logo.webp", sizes: "152x152", type: "image/webp" }
+      { url: "/proven-check.png", sizes: "180x180", type: "image/webp" },
+      { url: "/proven-check.png", sizes: "152x152", type: "image/webp" }
     ],
     other: [
-      { rel: "icon", url: "/car-logo.webp", sizes: "16x16", type: "image/webp" },
-      { rel: "mask-icon", url: "/car-logo.webp", color: "#2563eb" }
+      { rel: "icon", url: "/proven-check.png", sizes: "16x16", type: "image/webp" },
+      { rel: "mask-icon", url: "/proven-check.png", color: "#2563eb" }
     ]
   },
   // App-specific meta
@@ -92,7 +92,7 @@ export const metadata = {
     "apple-mobile-web-app-title": "ProveNcheck",
     "application-name": "ProveNcheck",
     "msapplication-TileColor": "#2563eb",
-    "msapplication-TileImage": "/car-logo.webp",
+    "msapplication-TileImage": "/proven-check.png",
     "theme-color": "#2563eb",
     // Enhanced SERP meta tags
     "price": "USD 40",
@@ -116,11 +116,11 @@ export default function RootLayout({ children }) {
 
         
         {/* Microsoft Tile Configuration */}
-        <meta name="msapplication-TileImage" content="/car-logo.webp" />
-        <meta name="msapplication-square70x70logo" content="/car-logo.webp" />
-        <meta name="msapplication-square150x150logo" content="/car-logo.webp" />
-        <meta name="msapplication-wide310x150logo" content="/car-logo.webp" />
-        <meta name="msapplication-square310x310logo" content="/car-logo.webp" />
+        <meta name="msapplication-TileImage" content="/proven-check.png" />
+        <meta name="msapplication-square70x70logo" content="/proven-check.png" />
+        <meta name="msapplication-square150x150logo" content="/proven-check.png" />
+        <meta name="msapplication-wide310x150logo" content="/proven-check.png" />
+        <meta name="msapplication-square310x310logo" content="/proven-check.png" />
         
         <link rel="manifest" href="/manifest.json" />
         <meta name="format-detection" content="telephone=no" />
@@ -135,7 +135,7 @@ export default function RootLayout({ children }) {
               "name": "ProveNcheck",
               "alternateName": "ProveNcheck",
               "url": "https://provencheck.site",
-              "logo": "https://provencheck.site/car-logo.webp",
+              "logo": "https://provencheck.site/proven-check.png",
               "description": "Leading provider of comprehensive vehicle history reports and VIN checks for car buyers worldwide.",
               "sameAs": [
                 "https://twitter.com/provencheck",
@@ -308,7 +308,7 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
-      <body className="antialiased">
+      <body className="antialiased" suppressHydrationWarning={true}>
         {children}
       </body>
     </html>

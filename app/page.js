@@ -292,10 +292,10 @@ if(formattedDate == "15/11/2025"){
             {/* Logo */}
             <div className="flex items-center">
               <Image
-                src="/car-logo.webp"
+                src="/proven-check.png"
                 alt="ProveNcheck - Vehicle History Reports"
-                width={40}
-                height={40}
+                width={48}
+                height={48}
                 className="mr-3"
               />
               <div className="text-2xl font-bold text-blue-600">ProveNcheck</div>
@@ -391,7 +391,7 @@ if(formattedDate == "15/11/2025"){
                   </div>
                   <div className="flex items-center">
                     <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
-                    <span className="text-gray-700"><strong>Price:</strong> From $35 per detailed report</span>
+                    <span className="text-gray-700"><strong>Price:</strong> From $20 per detailed report</span>
                   </div>
                   <div className="flex items-center">
                     <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
@@ -463,13 +463,13 @@ if(formattedDate == "15/11/2025"){
                       <button
                         type="button"
                         onClick={() => setCarType('hatchback')}
-                        className={`p-4 border-2 rounded-lg transition-all ${
+                        className={`p-4 border-2 rounded-full transition-all ${
                           carType === 'hatchback'
                             ? 'border-blue-600 bg-blue-50 shadow-lg'
                             : 'border-gray-300 hover:border-blue-300'
                         }`}
                       >
-                        <div className="text-3xl mb-2 font-bold text-blue-600">$35</div>
+                        <div className="text-3xl mb-2 font-bold text-blue-600">$20</div>
                         <div className="font-bold text-lg text-gray-900">HATCHBACK</div>
                         <div className="text-xs text-gray-600 mt-1">Compact & Efficient</div>
                       </button>
@@ -477,13 +477,13 @@ if(formattedDate == "15/11/2025"){
                       <button
                         type="button"
                         onClick={() => setCarType('sedan')}
-                        className={`p-4 border-2 rounded-lg transition-all ${
+                        className={`p-4 border-2 rounded-full transition-all ${
                           carType === 'sedan'
                             ? 'border-blue-600 bg-blue-50 shadow-lg'
                             : 'border-gray-300 hover:border-blue-300'
                         }`}
                       >
-                        <div className="text-3xl mb-2 font-bold text-blue-600">$60</div>
+                        <div className="text-3xl mb-2 font-bold text-blue-600">$35</div>
                         <div className="font-bold text-lg text-gray-900">SEDAN</div>
                         <div className="text-xs text-gray-600 mt-1">Classic & Comfortable</div>
                       </button>
@@ -491,13 +491,13 @@ if(formattedDate == "15/11/2025"){
                       <button
                         type="button"
                         onClick={() => setCarType('4x4')}
-                        className={`p-4 border-2 rounded-lg transition-all ${
+                        className={`p-4 border-2 rounded-full transition-all ${
                           carType === '4x4'
                             ? 'border-blue-600 bg-blue-50 shadow-lg'
                             : 'border-gray-300 hover:border-blue-300'
                         }`}
                       >
-                        <div className="text-3xl mb-2 font-bold text-blue-600">$90</div>
+                        <div className="text-3xl mb-2 font-bold text-blue-600">$50</div>
                         <div className="font-bold text-lg text-gray-900">4X4 / SUV</div>
                         <div className="text-xs text-gray-600 mt-1">Rugged & Powerful</div>
                       </button>
@@ -576,7 +576,7 @@ if(formattedDate == "15/11/2025"){
                 <div className="mt-6 pt-6 border-t border-gray-200">
                   <div className="flex flex-col sm:flex-row justify-between items-center text-sm text-gray-600">
                     <div className="mb-2 sm:mb-0">
-                      <strong className="text-gray-900">Price:</strong> $60-$90 per report
+                      <strong className="text-gray-900">Price:</strong> $20-$50 per report
                     </div>
                     <div className="mb-2 sm:mb-0">
                       <strong className="text-gray-900">Delivery time:</strong> Instantly
@@ -584,7 +584,7 @@ if(formattedDate == "15/11/2025"){
                   </div>
                   <div className="mt-4 p-3 bg-blue-50 rounded-lg">
                     <p className="text-sm font-semibold text-blue-900 mb-2">
-                      💡 Pricing: Hatchback $60 | Sedan $80 | SUV/4x4 $90
+                      💡 Pricing: Hatchback $20 | Sedan $35 | SUV/4x4 $50
                     </p>
                     <p className="text-xs text-gray-600">
                       Each vehicle type is associated with a specific product variant for accurate reporting
@@ -615,7 +615,7 @@ if(formattedDate == "15/11/2025"){
                   <span className="text-sm font-semibold">✓ Trusted</span>
                 </div>
                 <div className="absolute -bottom-4 -left-4 bg-blue-600 text-white px-4 py-2 rounded-full shadow-lg">
-                  <span className="text-sm font-semibold">From $35</span>
+                  <span className="text-sm font-semibold">From $20</span>
                 </div>
               </div>
             </div>
@@ -962,7 +962,7 @@ if(formattedDate == "15/11/2025"){
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
               <div className="text-center">
-                <div className="font-semibold text-gray-900">Tiered Pricing: $60/$80/$90</div>
+                <div className="font-semibold text-gray-900">Tiered Pricing: $20/$35/$50</div>
               </div>
               <div className="text-center">
                 <div className="font-semibold text-gray-900">Report delivered within 6–12 hours</div>
@@ -1790,10 +1790,10 @@ if(formattedDate == "15/11/2025"){
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0 flex items-center">
               <Image
-                src="/car-logo.webp"
+                src="/proven-check.png"
                 alt="ProveNcheck"
-                width={32}
-                height={32}
+                width={40}
+                height={40}
                 className="mr-3"
               />
               <div className="text-2xl font-bold text-blue-400">ProveNcheck</div>

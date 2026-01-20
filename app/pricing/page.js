@@ -223,10 +223,10 @@ export default function Pricing() {
             <div className="flex items-center">
               <Link href="/" className="flex items-center">
                 <Image
-                  src="/car-logo.webp"
+                  src="/proven-check.png"
                   alt="ProveNcheck"
-                  width={40}
-                  height={40}
+                  width={48}
+                  height={48}
                   className="mr-3"
                 />
                 <div className="text-2xl font-bold text-blue-600">ProveNcheck</div>
@@ -276,10 +276,10 @@ export default function Pricing() {
                     <div className="font-bold text-xl text-gray-900 mb-2">HATCHBACK</div>
                     <div className="text-sm text-gray-600 mb-4">Compact & Efficient</div>
                     <div className="flex items-center justify-center mb-2">
-                      <span className="text-4xl font-bold text-blue-600">$35</span>
+                      <span className="text-4xl font-bold text-blue-600">$20</span>
                     </div>
                     <div className="text-xs text-gray-600">Per report • One-time payment</div>
-                    <div className="mt-4 bg-blue-600 text-white py-2 px-4 rounded-lg font-semibold text-sm">
+                    <div className="mt-4 bg-blue-600 text-white py-2 px-4 rounded-full font-semibold text-sm">
                       Select Hatchback
                     </div>
                   </div>
@@ -291,10 +291,10 @@ export default function Pricing() {
                     <div className="font-bold text-xl text-gray-900 mb-2">SEDAN</div>
                     <div className="text-sm text-gray-600 mb-4">Classic & Comfortable</div>
                     <div className="flex items-center justify-center mb-2">
-                      <span className="text-4xl font-bold text-indigo-600">$60</span>
+                      <span className="text-4xl font-bold text-indigo-600">$35</span>
                     </div>
                     <div className="text-xs text-gray-600">Per report • One-time payment</div>
-                    <div className="mt-4 bg-indigo-600 text-white py-2 px-4 rounded-lg font-semibold text-sm">
+                    <div className="mt-4 bg-indigo-600 text-white py-2 px-4 rounded-full font-semibold text-sm">
                       Select Sedan
                     </div>
                   </div>
@@ -306,10 +306,10 @@ export default function Pricing() {
                     <div className="font-bold text-xl text-gray-900 mb-2">4X4 / SUV</div>
                     <div className="text-sm text-gray-600 mb-4">Rugged & Powerful</div>
                     <div className="flex items-center justify-center mb-2">
-                      <span className="text-4xl font-bold text-purple-600">$90</span>
+                      <span className="text-4xl font-bold text-purple-600">$50</span>
                     </div>
                     <div className="text-xs text-gray-600">Per report • One-time payment</div>
-                    <div className="mt-4 bg-purple-600 text-white py-2 px-4 rounded-lg font-semibold text-sm">
+                    <div className="mt-4 bg-purple-600 text-white py-2 px-4 rounded-full font-semibold text-sm">
                       Select 4X4/SUV
                     </div>
                   </div>
@@ -502,7 +502,7 @@ export default function Pricing() {
               },
               {
                 question: "Are there any hidden fees or recurring charges?",
-                answer: "No. Our pricing is a one-time payment per report. There are no hidden fees, monthly subscriptions, or recurring charges. Prices vary by vehicle type (Hatchback: $60, Sedan: $80, SUV/4x4: $90) to reflect the complexity and data required for each vehicle category."
+                answer: "No. Our pricing is a one-time payment per report. There are no hidden fees, monthly subscriptions, or recurring charges. Prices vary by vehicle type (Hatchback: $20, Sedan: $35, SUV/4x4: $50) to reflect the complexity and data required for each vehicle category."
               },
               {
                 question: "Can I get a refund if I'm not satisfied?",
@@ -537,7 +537,7 @@ export default function Pricing() {
             Ready to Get Your Vehicle History Report?
           </h2>
           <p className="text-xl text-blue-100 mb-8">
-            Join thousands of satisfied customers who trust HistoriVIN for their vehicle history needs.
+            Join thousands of satisfied customers who trust Proven Check for their vehicle history needs.
           </p>
           
           <div className="mb-8">
@@ -551,7 +551,7 @@ export default function Pricing() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
             <div className="text-center">
-              <div className="font-semibold text-white">One-time fee: From $35</div>
+              <div className="font-semibold text-white">One-time fee: From $20</div>
               <div className="text-blue-100">No recurring charges</div>
             </div>
             <div className="text-center">
@@ -572,13 +572,13 @@ export default function Pricing() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0 flex items-center">
               <Image
-                src="/car-logo.webp"
+                src="/proven-check.png"
                 alt="HistoriVIN"
-                width={32}
-                height={32}
+                width={40}
+                height={40}
                 className="mr-3"
               />
-              <div className="text-xl font-bold text-blue-400">HistoriVIN</div>
+              <div className="text-xl font-bold text-blue-400">Proven Check</div>
             </div>
 
             <div className="flex flex-wrap justify-center md:justify-end gap-6 text-sm">
@@ -668,7 +668,7 @@ export default function Pricing() {
                     type="button"
                     onClick={() => setFormData({...formData, carType: 'hatchback'})}
                     style={{
-                      padding: '15px 10px',
+                      padding: '5px 8px',
                       border: formData.carType === 'hatchback' ? '2px solid #2563eb' : '2px solid #d1d5db',
                       borderRadius: '8px',
                       background: formData.carType === 'hatchback' ? '#eff6ff' : 'white',
@@ -677,16 +677,16 @@ export default function Pricing() {
                       boxShadow: formData.carType === 'hatchback' ? '0 4px 6px rgba(37, 99, 235, 0.2)' : 'none'
                     }}
                   >
-                    <div style={{ fontSize: '24px', marginBottom: '5px' }}>🚗</div>
+                    <div style={{ fontSize: '14px', marginBottom: '2px' }}>🚗</div>
                     <div style={{ fontWeight: 'bold', fontSize: '14px', color: '#1f2937' }}>HATCHBACK</div>
-                    <div style={{ fontSize: '10px', color: '#6b7280' }}>Compact</div>
+                    <div style={{ fontSize: '4px', color: '#6b7280' }}>Compact</div>
                   </button>
                   
                   <button
                     type="button"
                     onClick={() => setFormData({...formData, carType: 'sedan'})}
                     style={{
-                      padding: '15px 10px',
+                      padding: '5px 8px',
                       border: formData.carType === 'sedan' ? '2px solid #2563eb' : '2px solid #d1d5db',
                       borderRadius: '8px',
                       background: formData.carType === 'sedan' ? '#eff6ff' : 'white',
@@ -695,9 +695,9 @@ export default function Pricing() {
                       boxShadow: formData.carType === 'sedan' ? '0 4px 6px rgba(37, 99, 235, 0.2)' : 'none'
                     }}
                   >
-                    <div style={{ fontSize: '24px', marginBottom: '5px' }}>🚙</div>
+                    <div style={{ fontSize: '14px', marginBottom: '5px' }}>🚙</div>
                     <div style={{ fontWeight: 'bold', fontSize: '14px', color: '#1f2937' }}>SEDAN</div>
-                    <div style={{ fontSize: '10px', color: '#6b7280' }}>Classic</div>
+                    <div style={{ fontSize: '5px', color: '#6b7280' }}>Classic</div>
                   </button>
                   
                   <button
