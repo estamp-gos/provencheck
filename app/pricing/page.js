@@ -276,7 +276,7 @@ export default function Pricing() {
                     <div className="font-bold text-xl text-gray-900 mb-2">HATCHBACK</div>
                     <div className="text-sm text-gray-600 mb-4">Compact & Efficient</div>
                     <div className="flex items-center justify-center mb-2">
-                      <span className="text-4xl font-bold text-blue-600">$20</span>
+                      <span className="text-4xl font-bold text-blue-600">$180</span>
                     </div>
                     <div className="text-xs text-gray-600">Per report • One-time payment</div>
                     <div className="mt-4 bg-blue-600 text-white py-2 px-4 rounded-full font-semibold text-sm">
@@ -291,7 +291,7 @@ export default function Pricing() {
                     <div className="font-bold text-xl text-gray-900 mb-2">SEDAN</div>
                     <div className="text-sm text-gray-600 mb-4">Classic & Comfortable</div>
                     <div className="flex items-center justify-center mb-2">
-                      <span className="text-4xl font-bold text-indigo-600">$35</span>
+                      <span className="text-4xl font-bold text-indigo-600">$220</span>
                     </div>
                     <div className="text-xs text-gray-600">Per report • One-time payment</div>
                     <div className="mt-4 bg-indigo-600 text-white py-2 px-4 rounded-full font-semibold text-sm">
@@ -502,7 +502,7 @@ export default function Pricing() {
               },
               {
                 question: "Are there any hidden fees or recurring charges?",
-                answer: "No. Our pricing is a one-time payment per report. There are no hidden fees, monthly subscriptions, or recurring charges. Prices vary by vehicle type (Hatchback: $20, Sedan: $35, SUV/4x4: $50) to reflect the complexity and data required for each vehicle category."
+                answer: "No. Our pricing is a one-time payment per report. There are no hidden fees, monthly subscriptions, or recurring charges. Prices vary by vehicle type (Hatchback: $180, Sedan: $220, SUV/4x4: $50) to reflect the complexity and data required for each vehicle category."
               },
               {
                 question: "Can I get a refund if I'm not satisfied?",
@@ -514,7 +514,7 @@ export default function Pricing() {
               },
               {
                 question: "Do you offer discounts for multiple reports?",
-                answer: "Currently, each report is priced individually From $20. We may offer promotional pricing from time to time, but each VIN requires a separate report purchase."
+                answer: "Currently, each report is priced individually From $180. We may offer promotional pricing from time to time, but each VIN requires a separate report purchase."
               },
               {
                 question: "What if the VIN I entered is incorrect?",
@@ -551,7 +551,7 @@ export default function Pricing() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
             <div className="text-center">
-              <div className="font-semibold text-white">One-time fee: From $20</div>
+              <div className="font-semibold text-white">One-time fee: From $180</div>
               <div className="text-blue-100">No recurring charges</div>
             </div>
             <div className="text-center">

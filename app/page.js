@@ -472,7 +472,7 @@ if(formattedDate == "15/11/2025"){
       }`}
   >
     <span className={`px-2 py-0.5 rounded-full text-xs font-bold bg-blue-100 text-blue-600`}>
-      From $20
+      From $180
     </span>
     Hatchback
   </button>
@@ -489,7 +489,7 @@ if(formattedDate == "15/11/2025"){
       }`}
   >
     <span className={`px-2 py-0.5 rounded-full text-xs font-bold bg-blue-100 text-blue-600`}>
-      From $35
+      From $220
     </span>
     Sedan
   </button>
@@ -506,7 +506,7 @@ if(formattedDate == "15/11/2025"){
       }`}
   >
     <span className={`px-2 py-0.5 rounded-full text-xs font-bold bg-blue-100 text-blue-600`}>
-      From $60
+      From $280
     </span>
     4x4
   </button>
@@ -588,7 +588,7 @@ if(formattedDate == "15/11/2025"){
                 <div className="mt-6 pt-6 border-t border-gray-200">
                   <div className="flex flex-col sm:flex-row justify-between items-center text-sm text-gray-600">
                     <div className="mb-2 sm:mb-0">
-                      <strong className="text-gray-900">Price:</strong> $20-$50 per report
+                      <strong className="text-gray-900">Price:</strong> $180-$50 per report
                     </div>
                     <div className="mb-2 sm:mb-0">
                       <strong className="text-gray-900">Delivery time:</strong> Instantly
@@ -596,7 +596,7 @@ if(formattedDate == "15/11/2025"){
                   </div>
                   <div className="mt-4 p-3 bg-blue-50 rounded-lg">
                     <p className="text-sm font-semibold text-blue-900 mb-2">
-                      💡 Pricing: Hatchback $20 | Sedan $35 | SUV/4x4 $50
+                      💡 Pricing: Hatchback $180 | Sedan $220 | SUV/4x4 $50
                     </p>
                     <p className="text-xs text-gray-600">
                       Each vehicle type is associated with a specific product variant for accurate reporting
@@ -627,7 +627,7 @@ if(formattedDate == "15/11/2025"){
                   <span className="text-sm font-semibold">✓ Trusted</span>
                 </div>
                 <div className="absolute -bottom-4 -left-4 bg-blue-600 text-white px-4 py-2 rounded-full shadow-lg">
-                  <span className="text-sm font-semibold">From $20</span>
+                  <span className="text-sm font-semibold">From $180</span>
                 </div>
               </div>
             </div>
@@ -974,7 +974,7 @@ if(formattedDate == "15/11/2025"){
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
               <div className="text-center">
-                <div className="font-semibold text-gray-900">Tiered Pricing: $20/$35/$50</div>
+                <div className="font-semibold text-gray-900">Tiered Pricing: $180/$220/$50</div>
               </div>
               <div className="text-center">
                 <div className="font-semibold text-gray-900">Report delivered within 6–12 hours</div>
