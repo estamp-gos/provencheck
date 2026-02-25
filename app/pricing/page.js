@@ -104,8 +104,20 @@ export default function Pricing() {
     }
   };
 
+  const paypalClientId = process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID || 'AdEtAjmATZaq5PBvBTczTraM4NIfjRjNEOQGLqRAyfKxtA-5X-oDhuWpAe483qkvkmLKZZsr2Vo2yuxh';
+
+  useEffect(() => {
+    if (!paypalClientId) {
+      console.error("❌ PayPal Client ID is missing! Please set NEXT_PUBLIC_PAYPAL_CLIENT_ID in your environment variables.");
+    }
+  }, [paypalClientId]);
+
   return (
-    <PayPalScriptProvider options={{ "client-id": process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID }}>
+    <PayPalScriptProvider options={{
+      "client-id": paypalClientId || "MISSING_CLIENT_ID",
+      currency: "USD",
+      intent: "capture"
+    }}>
       <div className="min-h-screen bg-white">
         {/* Header content unchanged... */}
         <header className="bg-white shadow-sm">

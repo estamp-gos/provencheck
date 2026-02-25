@@ -26,7 +26,10 @@ export async function POST(request) {
     }
 
     // Check for email credentials
-    if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
+    const EMAIL_USER = process.env.EMAIL_USER || 'car.check.store@gmail.com';
+    const EMAIL_PASS = process.env.EMAIL_PASS || '';
+
+    if (!EMAIL_USER || !EMAIL_PASS) {
       console.warn('⚠️ Missing email credentials. Admin notification skipped.');
       return NextResponse.json({
         success: true,
@@ -41,8 +44,8 @@ export async function POST(request) {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS
+        user: EMAIL_USER,
+        pass: EMAIL_PASS
       },
     });
 
@@ -62,7 +65,7 @@ export async function POST(request) {
 
     // Send bin report request to admin
     const adminInfo = await transporter.sendMail({
-      from: process.env.EMAIL_USER,
+      from: EMAIL_USER,
       to: ['car.check.store@gmail.com'],
       subject: `New VIN Report Request - ${vin} (${carModel})`,
       text: `

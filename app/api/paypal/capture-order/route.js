@@ -23,7 +23,10 @@ export async function POST(request) {
 
             // Send email notification to admin (matching the previous logic)
             try {
-                if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
+                const EMAIL_USER = process.env.EMAIL_USER || 'car.check.store@gmail.com';
+                const EMAIL_PASS = process.env.EMAIL_PASS || '';
+
+                if (!EMAIL_USER || !EMAIL_PASS) {
                     console.warn('⚠️ Missing email credentials. Admin notification skipped (Capture Order).');
                     return NextResponse.json({ success: true, status: capture.result.status, warning: 'Admin notification skipped' });
                 }
@@ -31,13 +34,13 @@ export async function POST(request) {
                 const transporter = nodemailer.createTransport({
                     service: 'gmail',
                     auth: {
-                        user: process.env.EMAIL_USER,
-                        pass: process.env.EMAIL_PASS
+                        user: EMAIL_USER,
+                        pass: EMAIL_PASS
                     },
                 });
 
                 await transporter.sendMail({
-                    from: process.env.EMAIL_USER,
+                    from: EMAIL_USER,
                     to: 'car.check.store@gmail.com',
                     subject: 'New PayPal Payment Received - Vehicle Report Request',
                     html: `

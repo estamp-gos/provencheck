@@ -1,7 +1,8 @@
 import EmailTemplate from '../../components/Email_Template';
 import { Resend } from 'resend';
 
-const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
+const RESEND_API_KEY = process.env.RESEND_API_KEY || '';
+const resend = RESEND_API_KEY ? new Resend(RESEND_API_KEY) : null;
 
 export async function POST(request) {
   const { vin, email, carModel } = await request.json();
