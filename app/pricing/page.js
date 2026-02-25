@@ -371,7 +371,13 @@ export default function Pricing() {
                               body: JSON.stringify(formData)
                             });
                             const order = await response.json();
-                            return order.id;
+                            if (order.id) {
+                              return order.id;
+                            } else {
+                              const errorMsg = order.error || 'Failed to initiate PayPal payment';
+                              console.error('PayPal initiation error:', order);
+                              alert(`PayPal Error: ${errorMsg}. Please try again or use a different method.`);
+                            }
                           }}
                           onApprove={async (data) => {
                             setLoading(true);

@@ -1862,10 +1862,16 @@ export default function App() {
                             })
                           });
                           const order = await response.json();
-                          return order.id;
+                          if (order.id) {
+                            return order.id;
+                          } else {
+                            const errorMsg = order.error || 'Failed to initiate PayPal payment';
+                            console.error('PayPal initiation error:', order);
+                            alert(`PayPal Error: ${errorMsg}. Please try again or use a different method.`);
+                          }
                         } catch (err) {
                           console.error('Error creating PayPal order:', err);
-                          alert('Failed to initiate PayPal payment. Please try again.');
+                          alert('Failed to initiate PayPal payment. Please check your connection.');
                         }
                       }}
                       onApprove={async (data) => {
