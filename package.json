@@ -10,7 +10,8 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@paddle/paddle-node-sdk": "^3.2.1",
+    "@paypal/checkout-server-sdk": "^1.0.3",
+    "@paypal/react-paypal-js": "^8.9.2",
     "@react-email/render": "^1.2.2",
     "next": "^16.0.10",
     "nodemailer": "^7.0.5",

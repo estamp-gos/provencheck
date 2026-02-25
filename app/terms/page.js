@@ -40,9 +40,9 @@ export default function TermsOfService() {
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="prose prose-lg max-w-none">
           <h1 className="text-4xl font-bold text-gray-900 mb-8">Terms of Service</h1>
-          
+
           <p className="text-gray-600 mb-8">
-            <strong>Effective Date:</strong> November 4, 2025<br/>
+            <strong>Effective Date:</strong> November 4, 2025<br />
             <strong>Last Updated:</strong> November 4, 2025
           </p>
 
@@ -90,8 +90,8 @@ export default function TermsOfService() {
               </p>
               <ul className="list-disc pl-6 text-gray-700 space-y-2">
                 <li>Payment is required before report generation</li>
-                <li>Current pricing: Hatchback $180, Sedan $220, SUV/4x4 $50 USD per vehicle history report</li>
-                <li>All payments are processed securely through Paddle</li>
+                <li>Current pricing: Hatchback $1, Sedan $220, SUV/4x4 $50 USD per vehicle history report</li>
+                <li>All payments are processed securely through PayPal</li>
                 <li>Prices may change without notice</li>
                 <li>Refunds are available within 14 days under specific conditions outlined in our Refund Policy</li>
               </ul>
@@ -109,7 +109,7 @@ export default function TermsOfService() {
                   <div className="ml-3">
                     <h3 className="text-sm font-medium text-blue-800">Refund Policy</h3>
                     <div className="mt-2 text-sm text-blue-700">
-                      <p><strong>14-Day Refund Window:</strong> We offer refunds for any reason within 14 days of purchase, in accordance with Paddle's refund policy. No exceptions or qualifiers apply. Please see our detailed Refund Policy for complete terms.</p>
+                      <p><strong>14-Day Refund Window:</strong> We offer refunds for any reason within 14 days of purchase, in accordance with PayPal's refund policy. No exceptions or qualifiers apply. Please see our detailed Refund Policy for complete terms.</p>
                     </div>
                   </div>
                 </div>
@@ -257,7 +257,7 @@ export default function TermsOfService() {
               </p>
               <div className="bg-gray-50 p-6 rounded-lg mt-4">
                 <p className="text-gray-700">
-                  <strong>Email:</strong> support@provencheck.site<br/>
+                  <strong>Email:</strong> support@provencheck.site<br />
                   <strong>Website:</strong> <Link href="https://provencheck.site" className="text-blue-600 hover:text-blue-700">https://provencheck.site</Link>
                 </p>
               </div>

@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 
 export async function POST(request) {
   try {
-    
+
     const { vin, email, carModel } = await request.json();
 
     // Validate input
@@ -27,20 +27,22 @@ export async function POST(request) {
 
     // Check for email credentials
     if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
+      console.warn('⚠️ Missing email credentials. Admin notification skipped.');
       return NextResponse.json({
-        success: false,
-        error: 'Missing email credentials',
+        success: true,
+        message: 'VIN report request received (Note: Admin notification is currently unconfigured).',
+        warning: 'Missing email credentials',
         hasEmailUser: !!process.env.EMAIL_USER,
         hasEmailPass: !!process.env.EMAIL_PASS
-      }, { status: 500 });
+      });
     }
 
     // Create transporter
     const transporter = nodemailer.createTransport({
       service: 'gmail',
-      auth: { 
-        user: process.env.EMAIL_USER, 
-        pass: process.env.EMAIL_PASS 
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS
       },
     });
 
@@ -58,10 +60,10 @@ export async function POST(request) {
       timeZoneName: 'short'
     });
 
-    // Send notification email to admin
+    // Send bin report request to admin
     const adminInfo = await transporter.sendMail({
       from: process.env.EMAIL_USER,
-      to: ['rmoto7817@gmail.com'],
+      to: ['car.check.store@gmail.com'],
       subject: `New VIN Report Request - ${vin} (${carModel})`,
       text: `
 New VIN Report Request Received
@@ -116,7 +118,7 @@ Please process this request and send the vehicle history report to the customer.
       `,
     });
 
-    return NextResponse.json({ 
+    return NextResponse.json({
       success: true,
       message: 'VIN report request submitted successfully. You will receive your report within 6-12 hours.',
       adminMessageId: adminInfo.messageId,
@@ -125,7 +127,7 @@ Please process this request and send the vehicle history report to the customer.
 
   } catch (error) {
     console.error('❌ Email sending failed:', error);
-    
+
     let errorDetails = {
       message: error.message,
       code: error.code,
@@ -142,7 +144,7 @@ Please process this request and send the vehicle history report to the customer.
       explanation = 'Invalid credentials. Make sure EMAIL_USER is your full Gmail address and EMAIL_PASS is a valid App Password.';
     }
 
-    return NextResponse.json({ 
+    return NextResponse.json({
       success: false,
       error: errorDetails,
       explanation,

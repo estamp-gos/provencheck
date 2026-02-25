@@ -41,7 +41,7 @@ export default function RefundPolicy() {
         <div className="prose prose-lg max-w-none">
           <h1 className="text-4xl font-bold text-gray-900 mb-8">Refund Policy</h1>
           <p className="text-gray-600 mb-8">
-            <strong>Effective Date:</strong> December 30, 2025<br/>
+            <strong>Effective Date:</strong> December 30, 2025<br />
             <strong>Last Updated:</strong> December 30, 2025
           </p>
           <div className="bg-blue-50 border-l-4 border-blue-400 p-6 mb-8">
@@ -54,7 +54,7 @@ export default function RefundPolicy() {
               <div className="ml-3">
                 <h2 className="text-lg font-medium text-blue-800">14-Day Refund Policy</h2>
                 <div className="mt-2 text-sm text-blue-700">
-                  <p><strong>We offer refunds for any reason within 14 days of purchase, in accordance with Paddle's refund policy. No exceptions or qualifiers apply. To request a refund, please contact support@provencheck.site within 14 days of your purchase. Refunds will be processed to your original payment method.</strong></p>
+                  <p><strong>We offer refunds for any reason within 14 days of purchase, in accordance with PayPal's refund policy. No exceptions or qualifiers apply. To request a refund, please contact support@provencheck.site within 14 days of your purchase. Refunds will be processed to your original payment method.</strong></p>
                 </div>
               </div>
             </div>
@@ -63,7 +63,7 @@ export default function RefundPolicy() {
             <section>
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Refund Policy Overview</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                We comply with Paddle’s refund policy. You may request a refund for any reason within 14 days of your purchase. No restrictions or exceptions apply.
+                We comply with PayPal’s refund policy. You may request a refund for any reason within 14 days of your purchase. No restrictions or exceptions apply.
               </p>
             </section>
             <section>
@@ -79,8 +79,8 @@ export default function RefundPolicy() {
               </p>
               <div className="bg-gray-50 p-6 rounded-lg mt-4">
                 <p className="text-gray-700">
-                  <strong>Email:</strong> support@provencheck.site<br/>
-                  <strong>Website:</strong> <Link href="https://provencheck.site" className="text-blue-600 hover:text-blue-700">https://provencheck.site</Link><br/>
+                  <strong>Email:</strong> support@provencheck.site<br />
+                  <strong>Website:</strong> <Link href="https://provencheck.site" className="text-blue-600 hover:text-blue-700">https://provencheck.site</Link><br />
                   <strong>Response Time:</strong> 24-48 hours
                 </p>
               </div>
@@ -89,7 +89,7 @@ export default function RefundPolicy() {
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">4. Acknowledgment</h2>
               <div className="bg-blue-50 border-l-4 border-blue-400 p-6">
                 <p className="text-blue-800 font-medium">
-                  By purchasing a CarCheck vehicle history report, you acknowledge that you have read, understood, and agree to this refund policy. You understand that refunds are available within 14 days of purchase for any reason, in accordance with Paddle’s policy.
+                  By purchasing a CarCheck vehicle history report, you acknowledge that you have read, understood, and agree to this refund policy. You understand that refunds are available within 14 days of purchase for any reason, in accordance with PayPal’s policy.
                 </p>
               </div>
             </section>

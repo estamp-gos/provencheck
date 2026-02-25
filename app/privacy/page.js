@@ -40,9 +40,9 @@ export default function PrivacyPolicy() {
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="prose prose-lg max-w-none">
           <h1 className="text-4xl font-bold text-gray-900 mb-8">Privacy Policy</h1>
-          
+
           <p className="text-gray-600 mb-8">
-            <strong>Effective Date:</strong> November 4, 2025<br/>
+            <strong>Effective Date:</strong> November 4, 2025<br />
             <strong>Last Updated:</strong> November 4, 2025
           </p>
 
@@ -56,7 +56,7 @@ export default function PrivacyPolicy() {
 
             <section>
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">2. Information We Collect</h2>
-              
+
               <h3 className="text-xl font-medium text-gray-900 mb-3">Personal Information</h3>
               <p className="text-gray-700 leading-relaxed mb-4">
                 We may collect the following personal information:
@@ -65,7 +65,7 @@ export default function PrivacyPolicy() {
                 <li>Email address (for report delivery)</li>
                 <li>Vehicle Identification Number (VIN) that you submit</li>
                 <li>Car model information you provide</li>
-                <li>Payment information (processed securely through Paddle)</li>
+                <li>Payment information (processed securely through PayPal)</li>
                 <li>IP address and browser information</li>
               </ul>
 
@@ -101,7 +101,7 @@ export default function PrivacyPolicy() {
               </p>
               <ul className="list-disc pl-6 text-gray-700 space-y-2">
                 <li><strong>Service Providers:</strong> We may share information with trusted third-party service providers who assist us in operating our website and providing services</li>
-                <li><strong>Payment Processing:</strong> Payment information is processed by Paddle, our secure payment processor</li>
+                <li><strong>Payment Processing:</strong> Payment information is processed by PayPal, our secure payment processor</li>
                 <li><strong>Legal Requirements:</strong> We may disclose information when required by law or to protect our rights</li>
                 <li><strong>Business Transfers:</strong> In the event of a merger, acquisition, or sale of assets</li>
               </ul>
@@ -187,7 +187,7 @@ export default function PrivacyPolicy() {
               </p>
               <div className="bg-gray-50 p-6 rounded-lg mt-4">
                 <p className="text-gray-700">
-                  <strong>Email:</strong> support@provencheck.site<br/>
+                  <strong>Email:</strong> support@provencheck.site<br />
                   <strong>Website:</strong> <Link href="https://provencheck.site" className="text-blue-600 hover:text-blue-700">https://provencheck.site</Link>
                 </p>
               </div>
