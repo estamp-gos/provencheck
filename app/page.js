@@ -421,7 +421,7 @@ export default function App() {
                             }`}
                         >
                           <span className={`px-2 py-0.5 rounded-full text-xs font-bold bg-blue-100 text-blue-600`}>
-                            From $1
+                            From $25
                           </span>
                           Hatchback
                         </button>
@@ -437,7 +437,7 @@ export default function App() {
                             }`}
                         >
                           <span className={`px-2 py-0.5 rounded-full text-xs font-bold bg-blue-100 text-blue-600`}>
-                            From $220
+                            From $35
                           </span>
                           Sedan
                         </button>
@@ -453,7 +453,7 @@ export default function App() {
                             }`}
                         >
                           <span className={`px-2 py-0.5 rounded-full text-xs font-bold bg-blue-100 text-blue-600`}>
-                            From $280
+                            From $45
                           </span>
                           4x4
                         </button>
@@ -543,7 +543,7 @@ export default function App() {
                     </div>
                     <div className="mt-4 p-3 bg-blue-50 rounded-lg">
                       <p className="text-sm font-semibold text-blue-900 mb-2">
-                        💡 Pricing: Hatchback $180 | Sedan $220 | SUV/4x4 $50
+                        💡 Pricing: Hatchback $25 | Sedan $35 | SUV/4x4 $50
                       </p>
                       <p className="text-xs text-gray-600">
                         Each vehicle type is associated with a specific product variant for accurate reporting
@@ -920,7 +920,7 @@ export default function App() {
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
                 <div className="text-center">
-                  <div className="font-semibold text-gray-900">Tiered Pricing: $180/$220/$50</div>
+                  <div className="font-semibold text-gray-900">Tiered Pricing: $25/$35/$45</div>
                 </div>
                 <div className="text-center">
                   <div className="font-semibold text-gray-900">Report delivered within 6–12 hours</div>

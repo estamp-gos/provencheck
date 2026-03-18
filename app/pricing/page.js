@@ -176,7 +176,7 @@ export default function Pricing() {
                       <div className="font-bold text-xl text-gray-900 mb-2">HATCHBACK</div>
                       <div className="text-sm text-gray-600 mb-4">Compact & Efficient</div>
                       <div className="flex items-center justify-center mb-2">
-                        <span className="text-4xl font-bold text-blue-600">$1</span>
+                        <span className="text-4xl font-bold text-blue-600">$25</span>
                       </div>
                       <div className="text-xs text-gray-600">Per report • One-time payment</div>
                       <div className="mt-4 bg-blue-600 text-white py-2 px-4 rounded-full font-semibold text-sm">Select</div>
@@ -189,7 +189,7 @@ export default function Pricing() {
                       <div className="font-bold text-xl text-gray-900 mb-2">SEDAN</div>
                       <div className="text-sm text-gray-600 mb-4">Classic & Comfortable</div>
                       <div className="flex items-center justify-center mb-2">
-                        <span className="text-4xl font-bold text-indigo-600">$220</span>
+                        <span className="text-4xl font-bold text-indigo-600">$35</span>
                       </div>
                       <div className="text-xs text-gray-600">Per report • One-time payment</div>
                       <div className="mt-4 bg-indigo-600 text-white py-2 px-4 rounded-full font-semibold text-sm">Select</div>

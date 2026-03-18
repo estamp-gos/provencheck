@@ -8,12 +8,12 @@ export async function POST(request) {
 
         // Prices matching the frontend display
         const prices = {
-            hatchback: '1.00',
-            sedan: '220.00',
+            hatchback: '25.00',
+            sedan: '35.00',
             '4x4': '50.00'
         };
 
-        const amount = prices[carType] || '1.00';
+        const amount = prices[carType] || '25.00';
 
         const customData = JSON.stringify({ name, email, vin, carType });
 

@@ -90,7 +90,7 @@ export default function TermsOfService() {
               </p>
               <ul className="list-disc pl-6 text-gray-700 space-y-2">
                 <li>Payment is required before report generation</li>
-                <li>Current pricing: Hatchback $1, Sedan $220, SUV/4x4 $50 USD per vehicle history report</li>
+                <li>Current pricing: Hatchback $25, Sedan $35, SUV/4x4 $50 USD per vehicle history report</li>
                 <li>All payments are processed securely through PayPal</li>
                 <li>Prices may change without notice</li>
                 <li>Refunds are available within 14 days under specific conditions outlined in our Refund Policy</li>
